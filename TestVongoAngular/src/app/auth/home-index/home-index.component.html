@@ -1,0 +1,15 @@
+<p>home-index works!</p>
+<div *ngIf="status; else elseBlock">You Are Connected. <button (click)="disconnect()" type="button" class="btn btn-danger"> disconnect </button>
+  <br>
+  <br>
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active" [routerLink]="'/pages/liste'">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked > Liste Donneé
+    </label>
+    <label class="btn btn-secondary" [routerLink]="'/pages/ajouter'">
+      <input type="radio" name="options" id="option2" autocomplete="off"> Ajouter Donneé
+    </label>
+  </div>
+
+</div>
+<ng-template #elseBlock>You are not connected. Plz Log In <button [routerLink]="'/login'" type="button" class="btn btn-warning"> LogIn </button> &nbsp;&nbsp; OR &nbsp;&nbsp;<button [routerLink]="'/register'" type="button" class="btn btn-warning"> Register</button> </ng-template>

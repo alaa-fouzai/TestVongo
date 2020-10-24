@@ -1,0 +1,7 @@
+<p>page works!</p>
+<div *ngIf="status; else elseBlock">You Are Connected.&nbsp;&nbsp;<button (click)="disconnect()" class="btn btn-secondary"> disconnect </button></div>
+<ng-template #elseBlock>You are not connected. Plz Log In</ng-template>
+<router-outlet></router-outlet>
+<footer>
+  <p  class="text-xs-center">© Copyright 2019. Alaa Fouzai.</p>
+</footer>

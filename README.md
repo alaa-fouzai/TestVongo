@@ -34,14 +34,4 @@ the db_name for the database i use is 'testvongo'
 
 if you change anything you need to change it inside Connection.php And inside ListItems.php
 
-## Folder hierarchy
-
-htdocs ------> TestVongo --------> TestVongoAngular --------> All Angular Files
-						 --------> AjouterItem.php
-						 --------> connection.php
-						 --------> DeleteItem.php
-						 --------> ListItems.php
-						 --------> login.php
-						 --------> ModifierItem.php
-						 --------> register.php
 
